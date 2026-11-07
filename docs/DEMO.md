@@ -55,32 +55,47 @@ Click **Download proof JSON**. Open it briefly:
 **2:40 — Close.**
 "Sealed Ledger is a working private expense auditor: NEAR AI Cloud's OpenAI-compatible API, a TEE-hosted model, fresh-nonce attestation, a real Verified panel, zero server-side retention, and fictional samples. The minimal verification script is in the repo and runs the same chain from the command line."
 
-## X post template
+## X demo post
 
-> Built **Sealed Ledger** at NEAR HACKATHON: a private expense auditor that runs inside NEAR AI Cloud TEEs.
+The human must publish the post; the agent may draft it but must not post it.
+Attach `demo.mp4` to the first tweet. Both `@NEARProtocol` and `#NEARHackathon`
+are required, and the post must say the project was built at NEAR HACKATHON.
+
+### Tweet 1 — problem + demo video (273 characters with one link)
+
+> Your bank statement shouldn't be handed to an AI. Built Sealed Ledger at NEAR
+> HACKATHON: receipts + CSV are audited inside NEAR AI Cloud TEEs, and every
+> result ships with a hardware proof. 0 bytes retained. Track 03 🧾🔐
 >
-> Upload receipts or a bank statement → the model categorizes and finds anomalies inside Intel TDX + NVIDIA enclaves → every result ships with a Verified panel (TDX quote, NRAS GPU evidence, ECDSA signer, nonce binding) and zero server-side retention.
->
-> A sample run passed 22/22 proof checks in ~37s: $4,905 spend, 4 anomalies, 4/5 receipts reconciled.
->
-> Track 03 — Privacy & Private AI 🧾🔐
->
-> [repo link] · [demo video]
->
+> https://sealed-ledger.vercel.app
 > @NEARProtocol #NEARHackathon
 
-Both `@NEARProtocol` and `#NEARHackathon` are required.
+### Tweet 2 — reply with NEAR's role, result, repo, and a question (270 characters)
+
+> NEAR AI Cloud supplies confidential inference + TDX/NVIDIA attestation. The app
+> verifies the TDX quote, NRAS GPU evidence, nonce binding, exact byte hashes,
+> and ECDSA signer. 22/22 checks · $4,905 · 4 anomalies.
+>
+> Repo: https://github.com/chaoticpunk/sealed-ledger
+> What would you audit first?
+
+The submission `demoUrl` is the URL of tweet 1.
 
 ## Submission form fields
 
 | Field | Value |
 |---|---|
 | Project name | Sealed Ledger |
-| Track | 03 — Privacy & Private AI |
-| Repository | public GitHub URL |
-| Demo post | public X post URL with the video/screenshots |
-| Description | see `docs/SUBMISSION.md` |
-| Team size | solo or team |
+| Track | `privacy` (Track 03 — Privacy & Private AI) |
+| Repository | `https://github.com/chaoticpunk/sealed-ledger` |
+| Demo post | URL of tweet 1 in the X thread |
+| Description (`idea`) | see `docs/SUBMISSION.md` |
+| Team size | `1` if solo; API also accepts `2 - 4`, `4 - 6`, `6 - 8`, `8+` |
 | NEAR wallet | address for prize payment |
+| Website | **omit** — the submission API has no website field |
+
+The human must review the full JSON payload and explicitly approve it before the
+submission is sent. Do not submit a second time to fix a mistake; use the
+request-changes flow instead.
 
 Deadline: **2026-11-14 23:59 UTC**.

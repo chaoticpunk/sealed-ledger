@@ -10,7 +10,7 @@
 
 ## Description (20–2,000 characters)
 
-Sealed Ledger is a private expense auditor built on NEAR AI Cloud. Upload receipt photos or a bank-statement CSV; a TEE-hosted model categorizes every charge and flags anomalies inside an Intel TDX confidential VM with an NVIDIA TEE GPU. The app generates a fresh 256-bit nonce, verifies the Intel TDX quote with dcap-qvl, submits GPU evidence to NVIDIA NRAS, checks that TDX report data binds the signing address and nonce, re-hashes the exact request/response bytes, and recovers the ECDSA signer to the attested TEE address. Every audit returns a Verified panel listing all checks plus a proof.json containing no personal data. The server holds uploads in memory for one request only: no database, disk writes, content logs, or cache. Fictional sample receipts and a 24-row statement are included so judges can test without real data. The near-ai-cloud agent skill is vendored in the repo, and a minimal verification script runs the same chain from the command line.
+Expense auditing requires handing bank statements and receipts to an AI service, where users can only trust the provider’s promise not to retain or inspect them. Sealed Ledger lets them verify instead. Users upload receipt photos and/or a bank CSV; a multimodal model inside NEAR AI Cloud’s Intel TDX confidential VM with an NVIDIA TEE GPU categorizes every charge and flags anomalies. NEAR AI Cloud provides the confidential inference endpoint and the TDX/NVIDIA attestation; the app generates a fresh 256-bit nonce, verifies the Intel TDX quote with dcap-qvl, validates NVIDIA NRAS GPU evidence, checks that TDX report data binds the signing address and nonce, re-hashes the exact request/response bytes, and recovers the ECDSA signer to the attested TEE address. Every result ships with a Verified panel and proof.json containing no personal data. Uploads are held in server memory for one request only: no database, disk writes, content logs, or cache. The repo includes a focused /app workspace, a minimal verification script, the official near-ai-cloud skill, and fictional samples. A sample run passed 22/22 checks in ~37s: $4,905 spend, 4 anomalies, 4/5 receipts reconciled.
 
 ## How the build maps to the track brief
 
@@ -67,6 +67,7 @@ In the UI: **Load sample → Run private audit**. The fictional sample needs no 
 - [x] `.env.local` is not committed (`git status` clean of secrets)
 - [x] Public repo contains `public/samples/` and `.claude/skills/near-ai-cloud/`
 - [x] Live demo deployed with the production key; full sample audit verified
-- [ ] X post is public, tags `@NEARProtocol`, and includes `#NEARHackathon`
+- [x] 28-second captioned demo video committed to `docs/demo.mp4`
+- [ ] X post is public, says "built at NEAR HACKATHON", tags `@NEARProtocol`, and includes `#NEARHackathon`
 - [ ] Both repo link and X post link submitted before **2026-11-14 23:59 UTC**
 - [ ] NEAR wallet address ready for prize payment (no wallet connection needed)
