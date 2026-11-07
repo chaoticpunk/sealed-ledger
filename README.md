@@ -4,6 +4,9 @@
 
 [![CI](https://github.com/chaoticpunk/sealed-ledger/actions/workflows/ci.yml/badge.svg)](https://github.com/chaoticpunk/sealed-ledger/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Live demo](https://img.shields.io/badge/live_demo-sealed--ledger.vercel.app-0d3b2e)](https://sealed-ledger.vercel.app)
+
+**Live demo:** <https://sealed-ledger.vercel.app> · **Workspace:** <https://sealed-ledger.vercel.app/app>
 
 Sealed Ledger reads receipt photos and bank-statement CSVs inside [NEAR AI Cloud](https://cloud.near.ai)'s confidential TEEs, categorizes every charge, finds anomalies, and returns a cryptographic proof that the analysis ran on genuine Intel TDX + NVIDIA hardware. Files are held in server memory for one request and never stored.
 

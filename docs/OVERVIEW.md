@@ -326,7 +326,9 @@ npm run samples     # regenerate the fictional sample files
 - ✅ `/app` workspace, cancel audit, ledger search, CSV export, 404/error pages,
   Open Graph card
 - ✅ CI workflow runs typecheck / lint / test / build
-- ⏳ Remaining: public repository, demo post, submission form
+- ✅ Public repository: <https://github.com/chaoticpunk/sealed-ledger>
+- ✅ Live demo: <https://sealed-ledger.vercel.app> (workspace at `/app`)
+- ⏳ Remaining: public X demo post and submission form
 
 If a new key or account returns `HTTP 402 — No spending limit configured`, see
 [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md#1-402--no-spending-limit-configured).

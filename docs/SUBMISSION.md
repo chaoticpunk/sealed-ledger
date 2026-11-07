@@ -49,8 +49,10 @@ In the UI: **Load sample → Run private audit**. The fictional sample needs no 
 
 ## Links to include in the public post
 
-- Repository: set `NEXT_PUBLIC_REPO_URL` and add the GitHub link
-- Demo video/screenshots: record with `docs/DEMO.md`
+- Repository: <https://github.com/chaoticpunk/sealed-ledger>
+- Live demo: <https://sealed-ledger.vercel.app>
+- Workspace: <https://sealed-ledger.vercel.app/app>
+- Demo video/screenshots: use `docs/DEMO.md` and `docs/screenshots/`
 - NEAR AI Cloud: <https://cloud.near.ai>
 - Verification center: <https://cloud.near.ai/verify>
 
@@ -62,7 +64,8 @@ In the UI: **Load sample → Run private audit**. The fictional sample needs no 
 - [x] `npm run build` passes
 - [x] `npm run verify:minimal` passes against a real key; output saved to `docs/minimal-verify-output.txt` (27 checks)
 - [x] `.env.local` is not committed (`git status` clean of secrets)
-- [ ] Public repo contains `public/samples/` and `.claude/skills/near-ai-cloud/`
+- [x] Public repo contains `public/samples/` and `.claude/skills/near-ai-cloud/`
+- [x] Live demo deployed with the production key; full sample audit verified
 - [ ] X post is public, tags `@NEARProtocol`, and includes `#NEARHackathon`
 - [ ] Both repo link and X post link submitted before **2026-11-14 23:59 UTC**
 - [ ] NEAR wallet address ready for prize payment (no wallet connection needed)
