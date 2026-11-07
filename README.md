@@ -12,6 +12,26 @@ Sealed Ledger reads receipt photos and bank-statement CSVs inside [NEAR AI Cloud
 
 Built for **NEAR Hackathon 2026 — Track 03: Privacy & Private AI**.
 
+## For judges
+
+The live demo is preconfigured; no key or account is needed to inspect the UI.
+
+1. Open <https://sealed-ledger.vercel.app/app>.
+2. Click **Load sample** — a fictional 24-row statement and five receipts.
+3. Click **Run private audit** and wait ~40 seconds.
+4. Inspect the **Verified** panel and download `proof.json`.
+
+From source:
+
+```bash
+npm install
+cp .env.example .env.local   # add NEARAI_CLOUD_API_KEY
+npm run verify:minimal       # one real completion + the full proof chain
+npm run dev                  # http://localhost:3000/app
+```
+
+The byte-level verification rules are in [`docs/VERIFICATION.md`](docs/VERIFICATION.md).
+
 ```
 Upload receipts / CSV
         │
