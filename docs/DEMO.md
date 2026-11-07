@@ -1,5 +1,13 @@
 # Demo script
 
+## Short video
+
+A 28-second captioned video made from the real audit screenshots is committed at
+[`demo.mp4`](demo.mp4) (1080×1080, H.264 + silent AAC). Attach it to the X post
+as-is, or use it as a storyboard for a screen recording.
+
+## 3-minute live demo script
+
 Target: **3 minutes**, recorded as a screen capture with the app at 1440 px wide.
 
 ## Before recording

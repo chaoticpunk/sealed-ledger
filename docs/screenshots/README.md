@@ -1,7 +1,8 @@
 # Screenshots
 
 All screenshots are from a real audit of the committed fictional sample. They
-contain no personal data.
+contain no personal data. The 28-second demo video built from these screenshots
+is at [`../demo.mp4`](../demo.mp4).
 
 ## Full-size product shots
 

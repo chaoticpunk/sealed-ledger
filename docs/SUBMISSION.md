@@ -52,7 +52,8 @@ In the UI: **Load sample → Run private audit**. The fictional sample needs no 
 - Repository: <https://github.com/chaoticpunk/sealed-ledger>
 - Live demo: <https://sealed-ledger.vercel.app>
 - Workspace: <https://sealed-ledger.vercel.app/app>
-- Demo video/screenshots: use `docs/DEMO.md` and `docs/screenshots/`
+- Demo video: [`docs/demo.mp4`](demo.mp4) (28 s, 1080×1080, captions burned in)
+- Demo screenshots: `docs/screenshots/`
 - NEAR AI Cloud: <https://cloud.near.ai>
 - Verification center: <https://cloud.near.ai/verify>
 
