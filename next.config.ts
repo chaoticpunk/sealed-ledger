@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  serverExternalPackages: ["@phala/dcap-qvl-node"],
+  devIndicators: false,
   cacheComponents: true,
   partialPrefetching: true,
   turbopack: {

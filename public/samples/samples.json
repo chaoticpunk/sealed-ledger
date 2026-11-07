@@ -1,0 +1,24 @@
+[
+  {
+    "id": "statement",
+    "kind": "statement",
+    "title": "September 2026 bank statement",
+    "description": "24 fictional transactions with seeded duplicates, a price increase, and a late-night charge.",
+    "files": [
+      "bank-statement-2026-09.csv"
+    ]
+  },
+  {
+    "id": "receipts",
+    "kind": "receipts",
+    "title": "Five fictional receipts",
+    "description": "Grocery, coffee, electronics, subscription, and hardware receipts that reconcile with the statement.",
+    "files": [
+      "receipt-01-harbor-pine.png",
+      "receipt-02-nimbus-coffee.png",
+      "receipt-03-aurora-electronics.png",
+      "receipt-04-streamwave.png",
+      "receipt-05-corner-hardware.png"
+    ]
+  }
+]

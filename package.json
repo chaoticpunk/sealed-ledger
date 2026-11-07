@@ -1,26 +1,56 @@
 {
   "name": "near-private-expense-auditor",
   "version": "0.1.0",
+  "description": "Private expense audit inside NEAR AI Cloud TEEs, with a verifiable proof.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chaoticpunk/sealed-ledger.git"
+  },
+  "homepage": "https://github.com/chaoticpunk/sealed-ledger#readme",
+  "bugs": {
+    "url": "https://github.com/chaoticpunk/sealed-ledger/issues"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "samples": "node scripts/generate-samples.mjs",
+    "smoke": "bash scripts/smoke.sh",
+    "verify:minimal": "node --env-file=.env.local --import tsx scripts/minimal-verify.ts"
+  },
+  "engines": {
+    "node": ">=20.6"
   },
   "dependencies": {
+    "@phala/dcap-qvl-node": "^0.3.3",
+    "clsx": "^2.1.1",
+    "ethers": "^6.17.0",
+    "jose": "^6.2.15",
+    "lucide-react": "^1.68.0",
     "next": "16.4.5",
+    "papaparse": "^5.7.0",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^20",
+    "@types/papaparse": "^5.5.2",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.5",
+    "sharp": "^0.35.5",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "tsx": "^4.23.15",
+    "typescript": "^5",
+    "vitest": "^4.1.12"
   }
 }

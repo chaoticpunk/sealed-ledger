@@ -1,0 +1,85 @@
+
+> near-private-expense-auditor@0.1.0 verify:minimal
+> node --env-file=.env.local --import tsx scripts/minimal-verify.ts
+
+
+🔐 Sealed Ledger · minimal NEAR AI Cloud verification
+
+   Model                    Qwen/Qwen3.8-27B
+
+1) Model policy
+   ✅ Model is listed by /v1/models — Qwen/Qwen3.8-27B · owner nearai
+   ✅ Model is TEE-hosted — owned by nearai
+
+2) Fresh attestation
+   Request nonce            e1ca31e05ba1f514cb7cef9432d1d0484e2a41e82d379d6169c1a655be669fe2
+   ✅ Model TEE attestation returned — 1 node(s)
+   ✅ Gateway TEE attestation returned
+   ✅ Model node 1 echoes the nonce — request_nonce matches
+   ✅ Gateway echoes the nonce — request_nonce matches
+   Model TEE address(es)    0x835ab53d20294ef795906dff21ae4c045336aa26
+   Gateway TEE address      0xb98a789cdc4817275f5155593ba73ef2a957e779
+
+3) One TEE completion
+   ✅ Completion returned — "\n\nHello there"
+   Chat id                  caa967da3d884270916f1cc33d58c64e
+
+4) Signature over exact request/response bytes
+   Signature kind           provider_tee
+   Request SHA-256          166738fa9b9a2809e33228f300b103d72e340399bb44a03a05769aae2873860f
+   Response SHA-256         6ee5e070c94ae482fea97f31b1b154f400866fa92c7f652c15893dadf0dd3a7d
+   Recovered signer         0x835AB53d20294Ef795906DFf21aE4C045336aa26
+   ✅ Signed payload shape matches the claimed kind
+   ✅ Signed request + response hashes match
+   ✅ Signer recovers to an attested TEE address
+
+5) Hardware attestation
+   ✅ Intel TDX quote verified (model) — dcap-qvl status: UpToDate
+   ✅ TDX report data binds the signing address (model)
+   ✅ TDX report data embeds the nonce (model)
+   ✅ NVIDIA NRAS overall verdict (model)
+   ✅ NVIDIA eat_nonce matches the request nonce
+   ✅ GPU-0: secure boot / debug / measurements / nonce — GH100 · driver 595.58.03 · vbios 96.00.CF.00.02
+   ✅ GPU-1: secure boot / debug / measurements / nonce — GH100 · driver 595.58.03 · vbios 96.00.CF.00.02
+   ✅ GPU-2: secure boot / debug / measurements / nonce — GH100 · driver 595.58.03 · vbios 96.00.CF.00.02
+   ✅ GPU-3: secure boot / debug / measurements / nonce — GH100 · driver 595.58.03 · vbios 96.00.CF.00.02
+   ✅ GPU-4: secure boot / debug / measurements / nonce — GH100 · driver 595.58.03 · vbios 96.00.CF.00.02
+   ✅ GPU-5: secure boot / debug / measurements / nonce — GH100 · driver 595.58.03 · vbios 96.00.CF.00.02
+   ✅ GPU-6: secure boot / debug / measurements / nonce — GH100 · driver 595.58.03 · vbios 96.00.CF.00.02
+   ✅ GPU-7: secure boot / debug / measurements / nonce — GH100 · driver 595.58.03 · vbios 96.00.CF.00.02
+   ✅ Intel TDX quote verified (gateway) — dcap-qvl status: UpToDate
+   ✅ TDX report data binds the gateway address
+   ✅ TDX report data embeds the nonce (gateway)
+   ✅ Model compose manifest matches mr_config
+
+6) Summary
+   ✅ Model is listed by /v1/models
+   ✅ Model is TEE-hosted
+   ✅ Model TEE attestation returned
+   ✅ Gateway TEE attestation returned
+   ✅ Model node 1 echoes the nonce
+   ✅ Gateway echoes the nonce
+   ✅ Completion returned
+   ✅ Signed payload shape matches the claimed kind
+   ✅ Signed request + response hashes match
+   ✅ Signer recovers to an attested TEE address
+   ✅ Intel TDX quote verified (model)
+   ✅ TDX report data binds the signing address (model)
+   ✅ TDX report data embeds the nonce (model)
+   ✅ NVIDIA NRAS overall verdict (model)
+   ✅ NVIDIA eat_nonce matches the request nonce
+   ✅ GPU-0: secure boot / debug / measurements / nonce
+   ✅ GPU-1: secure boot / debug / measurements / nonce
+   ✅ GPU-2: secure boot / debug / measurements / nonce
+   ✅ GPU-3: secure boot / debug / measurements / nonce
+   ✅ GPU-4: secure boot / debug / measurements / nonce
+   ✅ GPU-5: secure boot / debug / measurements / nonce
+   ✅ GPU-6: secure boot / debug / measurements / nonce
+   ✅ GPU-7: secure boot / debug / measurements / nonce
+   ✅ Intel TDX quote verified (gateway)
+   ✅ TDX report data binds the gateway address
+   ✅ TDX report data embeds the nonce (gateway)
+   ✅ Model compose manifest matches mr_config
+
+✅ All 27 checks passed. The completion ran inside a TEE and the exact bytes are signed by the attested address.
+

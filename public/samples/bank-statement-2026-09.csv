@@ -1,0 +1,25 @@
+date,time,description,merchant,amount,currency,category_hint
+2026-09-01,,Salary — Northwind Studio,Northwind Studio,4200.00,USD,Income
+2026-09-01,,Rent — Maple Court,Maple Court Apartments,-1850.00,USD,Housing
+2026-09-02,09:14,Groceries,Harbor & Pine Grocery,-63.42,USD,Groceries
+2026-09-03,07:48,Transit pass,Metro Transit,-32.00,USD,Transport
+2026-09-04,08:12,Coffee,Nimbus Coffee Roasters,-8.75,USD,Dining
+2026-09-05,,Electricity,Cascade Power,-94.10,USD,Utilities
+2026-09-06,17:20,Groceries,Harbor & Pine Grocery,-78.21,USD,Groceries
+2026-09-08,08:03,Coffee,Nimbus Coffee Roasters,-8.75,USD,Dining
+2026-09-09,08:05,Coffee,Nimbus Coffee Roasters,-8.75,USD,Dining
+2026-09-10,06:00,Streaming plan,StreamWave,-15.99,USD,Subscriptions
+2026-09-11,13:37,Notebook and pens,Paper & Thread,-42.50,USD,Shopping
+2026-09-12,18:42,Groceries,Harbor & Pine Grocery,-63.42,USD,Groceries
+2026-09-13,02:13,Late dinner,Midnight Diner,-68.40,USD,Dining
+2026-09-15,19:02,Ride home,Lyft,-24.80,USD,Transport
+2026-09-16,11:11,Pharmacy,Brightside Pharmacy,-36.20,USD,Health
+2026-09-18,15:07,Studio headphones,Aurora Electronics,-1899.00,USD,Shopping
+2026-09-20,06:00,Streaming plan,StreamWave,-24.99,USD,Subscriptions
+2026-09-21,18:10,Groceries,Harbor & Pine Grocery,-51.10,USD,Groceries
+2026-09-22,08:22,Coffee,Nimbus Coffee Roasters,-8.75,USD,Dining
+2026-09-23,,Savings transfer,Savings Transfer,-500.00,USD,Transfers
+2026-09-25,07:50,Transit pass,Metro Transit,-32.00,USD,Transport
+2026-09-27,21:40,Ryokan deposit,Kyoto Ryokan,-310.00,USD,Travel
+2026-09-28,,Electricity,Cascade Power,-88.40,USD,Utilities
+2026-09-30,17:55,Groceries,Harbor & Pine Grocery,-67.80,USD,Groceries
